@@ -112,7 +112,7 @@
   
     .sidebar nav ul li::before {
       content: "• ";
-      color: var(--cor-texto);
+      color: var(--cor-texto );
     }
   
     .dashboard-grid {
