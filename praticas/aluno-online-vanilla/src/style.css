@@ -47,6 +47,10 @@ body {
   flex: 1;
 }
 
+.main{
+  background: transparent;
+}
+
 .topbar {
   display: flex;
   justify-content: space-between;
@@ -70,6 +74,7 @@ body {
   border: 1px solid var(--cor-borda);
   border-radius: 8px;
   overflow: hidden;
+  background: transparent;
 }
 
 .card h2 {

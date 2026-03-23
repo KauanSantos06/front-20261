@@ -19,6 +19,7 @@ form.addEventListener("submit", function (event) {
         valido = false;
     } else {
         erroEmail.textContent = "";
+        
     }
 
     // Validação senha
