@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aluno Online - Dashboard</title>
+    </head>
+    <body class="app-container">
+
+
+  <main>
+        <section class="card">
+
+
+            <header class="topo">
+                 <img class="logo" src="/learn.svg" alt="Logotipo Aluno Online">
+                <h1>Aluno Online</h1>
+            </header>
+
+            <form id="loginForm">
+                <section class="campo">
+                    <label for="email">E-mail</label>
+                    <input type="text" id="email" name="email">
+                    <small class="erro" id="erroEmail"></small>
+                </section>
+
+
+                <section class="campo">
+                    <label for="senha">Senha</label>
+                    <input type="password" id="senha" name="senha">
+                    <small class="erro" id="erroSenha"></small>
+                </section>
+
+                <button type="submit">Entrar</button>
+
+            </form>
+
+        </section>
+  </main>
+
+
+    <script type="module" src="/src/main.js"></script>
+    </body>
+</html>
