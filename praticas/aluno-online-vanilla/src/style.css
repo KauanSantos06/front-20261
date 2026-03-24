@@ -158,7 +158,7 @@ body {
 
 
 /* Centraliza o corpo APENAS na tela de login */
-body:has(#loginForm) {
+body:has(#login-Form) {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -168,7 +168,7 @@ body:has(#loginForm) {
 }
 
 
-main:has(#loginForm) {
+main:has(#login-Form) {
   background-color: #fff;
   width: 100%;
   max-width: 450px;
@@ -181,7 +181,7 @@ main:has(#loginForm) {
 
 
 
-#loginForm {
+#login-Form {
   display: flex;
   flex-direction: column;
   text-align: left;
@@ -189,14 +189,14 @@ main:has(#loginForm) {
 }
 
 
-#loginForm label {
+#login-Form label {
   font-weight: bold;
   margin-bottom: 5px;
   display: block;
 }
 
 
-#loginForm input {
+#login-Form input {
   width: 100%;
   padding: 12px;
   border: 1px solid var(--cor-borda);
@@ -206,7 +206,7 @@ main:has(#loginForm) {
 }
 
 
-#loginForm .error-message {
+#login-Form .error-message {
   color: var(--cor-erro);
   font-size: 0.85rem;
   min-height: 20px;
@@ -214,7 +214,7 @@ main:has(#loginForm) {
 }
 
 
-#btnEntrar {
+#btn-Entrar {
   background-color: #e9e9e9;
   border: 1px solid #ccc;
   padding: 15px;
@@ -225,13 +225,13 @@ main:has(#loginForm) {
 }
 
 
-#btnEntrar:hover {
+#btn-Entrar:hover {
   background-color: #ddd;
 }
 
 
 /* Footer específico da página de login */
-body:has(#loginForm) footer {
+body:has(#login-Form) footer {
   position: absolute;
   bottom: 20px;
   font-size: 0.85rem;
