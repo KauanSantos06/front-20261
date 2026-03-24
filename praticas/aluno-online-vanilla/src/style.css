@@ -110,6 +110,7 @@
       cursor: pointer;
     }
   
+    
     .sidebar nav ul li::before {
       content: "• ";
       color: var(--cor-texto);
