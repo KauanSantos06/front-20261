@@ -1,3 +1,4 @@
+/* Variáveis e Reset */
 :root {
     --cor-fundo: #e9e9e9;
     --cor-texto: #303030;
@@ -20,6 +21,7 @@
   }
   
   /* --- MOBILE --- */
+  /* Versão mobile*/
 
   .app-container {
     display: flex;
@@ -63,6 +65,9 @@
   .dashboard-grid {
     display: grid;
     grid-template-columns: 1fr; /* 1 cartão por linha no mobile */
+  .dashboard-grid {
+    display: grid;
+    grid-template-columns: 1fr; 
     gap: 20px;
   }
   
@@ -91,6 +96,9 @@
   /* --- DESKTOP (Min-width: 768px) --- */
   
   @media (width <= 768px) {
+  /* Versão para desktop  (width >= 768px)*/
+  
+  @media (width >= 768px) {
     .app-container {
       flex-direction: row; /* Sidebar ao lado do conteúdo */
       min-height: 100vh;
@@ -119,5 +127,10 @@
   
     .dashboard-grid {
       grid-template-columns: repeat(2, 1fr); /* 2 cartões por linha no desktop */
+      color: var(--cor-texto );
+    }
+  
+    .dashboard-grid {
+      grid-template-columns: repeat(1, 1fr); /
     }
   }
