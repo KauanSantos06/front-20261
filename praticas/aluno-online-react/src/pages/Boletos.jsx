@@ -7,6 +7,7 @@ function Boletos() {
       <section className="flex h-screen bg-gray-100">
         <Sidebar />
 
+
         <main className="flex-1 p-6">
           <Topbar titulo="Meus Boletos" />
 
