@@ -8,7 +8,7 @@ function Faltas() {
         <Sidebar />
 
         <main className="flex-1 p-6">
-          <Topbar titulo="Minhas Faltas" />
+          <Topbar titulo="Minhas Faltas"  />
 
           <section className="p-8 rounded shadow">
             <h2 className="text-lg font-semibold mb-4">
