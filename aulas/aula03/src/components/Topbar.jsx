@@ -1,10 +1,12 @@
 import Avatar from "../assets/user.svg"
 
-function Topbar() {
+function Topbar({titulo}) {
   return (
+
     <header className="flex justify-between items-center mb-6 md:mb-8">
+
       <h1 className="text-2xl md:text-3xl font-bold">
-        Olá, Aluno!
+        {titulo}
       </h1>
 
       <img

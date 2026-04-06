@@ -9,7 +9,7 @@ function Boletos(){
             <Topbar/>
             <Sidebar/>
             
-                <h2> Minhas notas </h2>
+                <h2> Meus boletos </h2>
         </>
     );
 }
