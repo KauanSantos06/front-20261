@@ -15,6 +15,7 @@ function Faltas() {
               Histórico de Faltas por Semestre
             </h2>
 
+
             <h3 className="text-md font-semibold mb-2 mt-4">2026.1</h3>
             <table className="w-full">
               <thead>
