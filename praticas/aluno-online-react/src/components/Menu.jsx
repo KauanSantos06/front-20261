@@ -1,13 +1,15 @@
-function Menu() {
+function Menu({ itens }) {
   return (
     <nav>
       <ul className="space-y-4 text-gray-700">
-        <li className="hover:text-black cursor-pointer">Dashboard</li>
-        <li className="hover:text-black cursor-pointer">Notas</li>
-        <li className="hover:text-black cursor-pointer">Faltas</li>
-        <li className="hover:text-black cursor-pointer">Boletos</li>
-        <li className="hover:text-black cursor-pointer">Requerimentos</li>
-        <li className="hover:text-black cursor-pointer">Sair</li>
+        {itens.map((item, index) => (
+          <li 
+            key={index}
+            className="hover:text-black cursor-pointer"
+          >
+            {item}
+          </li>
+        ))}
       </ul>
     </nav>
   );
