@@ -8,10 +8,10 @@ function Layout() {
                 <Menu />
             </aside>
             <main>{/* Minhas páginas */}
-
                 <Outlet /> {/* traz as paginas */}
-
             </main>
         </>
     );
 }
+
+export default Layout;
