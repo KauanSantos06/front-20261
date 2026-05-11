@@ -1,13 +1,13 @@
-import logo from '../assets/learn.svg';
-import FormLogin from '../forms/FormLogin';
+import {useNavigate} from "react-router";
 
 function Login() {
 
-  return <>
-    <img src={logo} alt="Imagem do Logo" />
-    <h1>Aluno Online</h1>
-    <FormLogin />
-  </>;
+  const navigate = useNavigate();
+
+    return <>
+        <h1> Página de login </h1>
+        <button onClick={()=> navigate("/")}> Entrar </button>
+    </>
 }
 
 export default Login;
