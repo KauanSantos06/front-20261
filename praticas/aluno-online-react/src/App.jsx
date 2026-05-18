@@ -7,7 +7,7 @@ import Erro404 from "./pages/Erro";
 import Requerimentos from './pages/Requerimentos';
 import Notas from './pages/Notas';
 import Login from "./pages/Login"
-import { useAuth } from './contexts/AuthContext';
+import { useAuth } from "./contexts/useAuth";
 
 
 function App() {

@@ -1,5 +1,5 @@
 import { NavLink, Link, useNavigate } from 'react-router';
-import { useAuth } from '../contexts/AuthContext';
+import { useAuth } from "../contexts/useAuth";
 
 function Menu() {
 
