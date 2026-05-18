@@ -3,8 +3,6 @@ import { useAuth } from '../contexts/AuthContext';
 
 function Menu() {
 
-const usuarioId = 0;
-
  const {logout, usuario} = useAuth();
 
  const navigate = useNavigate();

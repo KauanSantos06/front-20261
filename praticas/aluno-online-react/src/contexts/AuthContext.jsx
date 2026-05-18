@@ -6,7 +6,7 @@ function AuthProvider({children}){
     const [usuario, setUsuario] = useState({});
     const [logado, setLogado] = useState(false);
 
-    const login = (dados)  => {
+    const login = ()  => {
         // chama o API da bacnend
         setUsuario({nome: "Kauan"});
         setLogado(true);
