@@ -1,20 +1,11 @@
-import Sidebar from "../components/Sidebar";
-import Topbar from "../components/Topbar";
-import Main from "../components/Main";
+import { useParams } from 'react-router';
 
 function Dashboard(){
-    return(
+    const {id} = useParams();
+
+    return (
         <>
-            <section className="flex h-screen bg-gray-100">
-
-                <Sidebar />
-
-                <main className="flex-1 p-6">
-                        <Topbar titulo="Olá, Aluno!" />      
-                        <Main />
-                </main>
-
-            </section>
+        <h1> Bem vindo ao DashBoard {id} </h1>
         </>
     );
 }
