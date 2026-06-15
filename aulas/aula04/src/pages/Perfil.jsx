@@ -27,13 +27,22 @@ const validadores = {
     },
 
     nascimento:{
-        validate: (value) => Date.parse(value) < Date.now() || "Data Invalida",
+        validate: {
+            dataMinima: (value) =>
+                Date.parse(`${value} 00:00:00 UTC`) >= new Date("01/01/1900 00:00:00 UTC").getTime() || "Data inferior",
+            
+            dataMaxima: (value) =>
+                Date.parse(`${value} 00:00:00 UTC`) < new Date().getTime() || "Data superior",
+      },
     },
 
     telefone:{
-        min: {value: 0, message: "Telefone é um número"},
-        pattern: {value: , message: "Telefone invalido"}
-    }
+      min: { value: 0, message: "Telefone invalido" },
+      pattern: {
+        value: /^(\(?\d{2}\)?[\s.-]?)?(\d{4,5})[\s.-]?(\d{4})$/,
+        message: "Telefone invalido",
+      },
+    },
 };
 
 
